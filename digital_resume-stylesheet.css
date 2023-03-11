@@ -1,0 +1,267 @@
+/*IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap');
+
+
+
+
+/************************laptop-1366px width and higher**********************/
+
+/* ===========ROOT STYLING-background, font, links etc=========== */
+
+body {
+    font-family: PT Sans, sans-serif;
+    background-image: url('/images-digital_resume/Page-background.png');
+    background-size: cover;
+    color: #ffffff;
+    /*CSS gridbox to align all the cards in the page*/
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #98D65E;
+}
+
+.text-alignment
+
+h2 {
+    text-align: center;
+}
+
+
+/* ===========NAVIGATION-BAR============= */
+
+/* LOGO AND NABVAR*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    top: 2vh;
+    left: 2;
+    right: 2vw;
+
+    /* background image for nav-bar */
+    background-image:
+        linear-gradient(to bottom, rgba(255, 237, 216, 0.336), rgba(0, 0, 0, 0.336)),
+        url('/images-digital_resume/Page-background.png');
+    mix-blend-mode: normal;
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 246, 0.705));
+    width: 95vw;
+    
+    /*Box-shadow effect for navbar */
+    box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    border-style: outset;
+    border-color: #FFDAB9;
+    border-width: 5px;
+}
+
+/* logo */
+#logo {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    width: 8%;
+    height: 8%;
+}
+
+/* navbar individual items alignment */
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 4vw;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav-About {
+    grid-area: 1 / 1 / 2 / 2;
+    border: 1px solid #FFDAB9;
+}
+
+.nav-Projects {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.nav-Education {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.nav-ContactMe {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+/* ===========LANDING-PAGE============= */
+
+/* div box positioning */
+#landing-page { margin-top: 25vh;
+                margin-left: 4vw;
+                margin-right: 4vw;
+                padding-bottom: 30vh;
+}
+                
+/* Landing-page-text */
+
+#landing-page-text {display: flex;
+flex-direction: column;
+margin-top: 5vw;
+}
+
+#landing-top {margin-left: 15vw;}
+
+h1 {margin-left: 7vw;
+    margin-right: 50vw;
+    padding-left: 1vw;
+    border-style: hidden hidden ridge hidden}
+
+    #introduction{margin-left: 7vw;}
+
+/* Background-image for landing page */
+.hero-image {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(255, 237, 216, 0.336)),
+        url('/images-digital_resume/hero-background.png');
+    mix-blend-mode: normal;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38vh;
+
+    /* box-shadow effect for hero background */
+    box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 56px;
+border-style: outset;
+border-color: #FFDAB9;
+border-width: 5px;
+}
+
+
+/*Name on landing page*/
+h1 {
+    font-size: 10vh;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* ===========About-Skills=========== */
+
+
+
+
+
+
+
+
+/* Projects list with image links */
+#project-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Project image links */
+.img-size {
+    width: 20vw;
+    height: 30vh;
+}
+
+
+
+
+
+/*ID SELECTORS*/
+
+
+/*CLASS SELECTORS*/
+.border-look {
+    border-style: groove;
+    border-color: #EE7600;
+}
+
+
+.section-margins {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* paragraphs for ABOUT*/
+.About-paragraph-margins {
+    margin-left: 60px;
+    margin-right: 180px;
+}
+
+
+
+
+/* EDUCATION flexbox paragraphs and subheadings */
+#Education-positioning {
+    display: flex;
+    flex-direction: row;
+
+    /* Aligns the top of the heading and paragraph */
+    align-items: baseline;
+}
+
+.education-paragraph {
+    border-style: groove;
+    border-color: #EE7600;
+    margin-left: 15px;
+    margin-right: 20px;
+    padding-left: 15px;
+    border-style: none none none groove;
+}
+
+.new-background {
+    background-color: #D2B48C;
+}
+
+/***************************************************Tablet-landscape: 768px <= width < 1366px*************************** */
+
+@media screen and (max-width:768px) {
+    form {
+        text-align: center;
+    }
+
+    /* Skills-list */
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+}
+
+/***************************************************Mobile-portrait: 425px <= width < 768px*************************** */
+
+@media screen and (max-width:425px) {
+    #project-list {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    form {
+        text-align: center;
+    }
+
+}
