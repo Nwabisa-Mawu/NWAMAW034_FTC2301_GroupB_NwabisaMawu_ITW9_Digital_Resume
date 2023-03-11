@@ -28,10 +28,23 @@ a:hover {
     color: #98D65E;
 }
 
-.text-alignment
-
 h2 {
     text-align: center;
+}
+
+/* box-shadow effect and shape for page cards */
+.box-shadow {
+    box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #998a77;
+    margin-top: 25vh;
+    padding-bottom: 30vh;
+    height: 38vh;
+    background-color: #8B7D6B;
+    margin-left: 7vw;
+    margin-right: 7vw;
 }
 
 
@@ -56,13 +69,11 @@ header {
     mix-blend-mode: normal;
     filter: drop-shadow(0px 4px 4px rgba(255, 255, 246, 0.705));
     width: 95vw;
-    
-    /*Box-shadow effect for navbar */
     box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 56px;
     border-style: outset;
-    border-color: #FFDAB9;
     border-width: 5px;
+    border-color: #998a77;
 }
 
 /* logo */
@@ -89,7 +100,6 @@ nav {
 
 .nav-About {
     grid-area: 1 / 1 / 2 / 2;
-    border: 1px solid #FFDAB9;
 }
 
 .nav-Projects {
@@ -107,30 +117,9 @@ nav {
 /* ===========LANDING-PAGE============= */
 
 /* div box positioning */
-#landing-page { margin-top: 25vh;
-                margin-left: 4vw;
-                margin-right: 4vw;
-                padding-bottom: 30vh;
-}
-                
-/* Landing-page-text */
+#landing-page {
+    /* Background-image for landing page */
 
-#landing-page-text {display: flex;
-flex-direction: column;
-margin-top: 5vw;
-}
-
-#landing-top {margin-left: 15vw;}
-
-h1 {margin-left: 7vw;
-    margin-right: 50vw;
-    padding-left: 1vw;
-    border-style: hidden hidden ridge hidden}
-
-    #introduction{margin-left: 7vw;}
-
-/* Background-image for landing page */
-.hero-image {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(255, 237, 216, 0.336)),
         url('/images-digital_resume/hero-background.png');
     mix-blend-mode: normal;
@@ -139,30 +128,78 @@ h1 {margin-left: 7vw;
     background-size: cover;
     height: 38vh;
 
-    /* box-shadow effect for hero background */
+    /* box shadow for hero background */
     box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 56px;
-border-style: outset;
-border-color: #FFDAB9;
-border-width: 5px;
+    border-radius: 56px;
+    border-style: outset;
+    border-width: 5px;
+    border-color: #998a77;
+    margin-top: 25vh;
+    padding-bottom: 30vh;
+
+    /* larger box-card dimensions than th other pages */
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
+/* Landing-page-text */
 
-/*Name on landing page*/
+#landing-page-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+}
+
+#landing-top {
+    margin-left: 15vw;
+}
+
+/* Nwabisa mawu on title page */
 h1 {
     font-size: 10vh;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-left: 7vw;
+    margin-right: 50vw;
+    padding-left: 1vw;
+    border-style: hidden hidden ridge hidden
 }
+
+#introduction {
+    margin-left: 7vw;
+}
+
+
 
 /* ===========About-Skills=========== */
 
 
+#About-Skills {
+    /* CSS grid for About-Skills */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    background-color: #8B7D6B;
+}
+
+#About {
+    max-width: 55vw;
+}
+
+#Skills {
+    margin: auto auto auto 7vw;
+    border-style: hidden hidden hidden double;
+}
 
 
+/* ===========Projects=========== */
 
 
+/* Project image-links */
 
+.project-img {border-radius: 10%;
+    width: 20vw;
+    height: 30vh;}
 
 /* Projects list with image links */
 #project-list {
@@ -170,41 +207,11 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-/* Project image links */
-.img-size {
-    width: 20vw;
-    height: 30vh;
+    padding: 10vw auto auto auto;
 }
 
 
-
-
-
-/*ID SELECTORS*/
-
-
-/*CLASS SELECTORS*/
-.border-look {
-    border-style: groove;
-    border-color: #EE7600;
-}
-
-
-.section-margins {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-/* paragraphs for ABOUT*/
-.About-paragraph-margins {
-    margin-left: 60px;
-    margin-right: 180px;
-}
-
-
-
+/* ===========Education=========== */
 
 /* EDUCATION flexbox paragraphs and subheadings */
 #Education-positioning {
@@ -224,9 +231,9 @@ h1 {
     border-style: none none none groove;
 }
 
-.new-background {
-    background-color: #D2B48C;
-}
+
+/* ===========Contact details/footer=========== */
+
 
 /***************************************************Tablet-landscape: 768px <= width < 1366px*************************** */
 
@@ -244,6 +251,11 @@ h1 {
 
 
 }
+
+
+
+
+
 
 /***************************************************Mobile-portrait: 425px <= width < 768px*************************** */
 
