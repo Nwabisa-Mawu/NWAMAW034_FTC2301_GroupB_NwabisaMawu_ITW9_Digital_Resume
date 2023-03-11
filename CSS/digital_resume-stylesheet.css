@@ -29,6 +29,7 @@ a:hover {
 }
 
 h2 {
+    font-size: 7vh;
     text-align: center;
 }
 
@@ -182,14 +183,38 @@ h1 {
     background-color: #8B7D6B;
 }
 
-#About {
-    max-width: 55vw;
+#About {margin: auto 4vw auto 3vw;
+    max-width: 40vw;
 }
 
-#Skills {
-    margin: auto auto auto 7vw;
+#Skills {padding-left: 3vw;
+    padding-bottom: 6vw;
+    margin: auto auto auto 1vw;
     border-style: hidden hidden hidden double;
 }
+
+
+
+/* Skillbar for Skills section */
+/* white background container */
+.container {
+    width: 150%;
+background-color: #ffffff;}
+
+.html {width: 60%;
+    color: #98D65E;
+background-color: #98D65E;}
+
+.css {width: 78%;
+    color: #98D65E;
+background-color: #98D65E;}
+
+.figma {width: 80%;
+    color: #98D65E;
+background-color: #98D65E;}
+
+
+
 
 
 /* ===========Projects=========== */
@@ -197,9 +222,16 @@ h1 {
 
 /* Project image-links */
 
-.project-img {border-radius: 10%;
+.project-img {
+    border-radius: 10%;
     width: 20vw;
-    height: 30vh;}
+    height: 30vh;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    border-style: inset;
+    border-width: 5px;
+    border-color: #998a77;
+}
 
 /* Projects list with image links */
 #project-list {
