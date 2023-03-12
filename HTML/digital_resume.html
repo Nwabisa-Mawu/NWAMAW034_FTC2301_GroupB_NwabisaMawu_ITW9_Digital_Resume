@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--stylesheet source link  -->
-    <link rel="stylesheet" type="text/css"
-        href="/CSS/digital_resume-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/digital_resume-stylesheet.css">
 
     <title>Nwabisa Mawu Digital Resume</title>
 </head>
@@ -18,9 +17,7 @@
 
     <!-- Navigation bar and logo image -->
     <header>
-        <img id="logo"
-            src="/images-digital_resume/real-logo.png"
-            alt="Logo">
+        <img id="logo" src="/images-digital_resume/real-logo.png" alt="Logo">
         <nav>
             <p class="nav-items"><a href="#About">About</a></p>
             <p class="nav-items"><a href="#Projects">Projects</a></p>
@@ -31,16 +28,17 @@
 
 
     <!-- Headline and Hero image -->
-    <section id="landing-page">
-        <div id="landing-page-text">
-            <p id="landing-top">Ipsum dolor sit amet,</p>
-            <h1>Nwabisa Mawu</h1>
-            <p id="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                <br>eiusmod
-                tempor incididunt ut labore et dolore magna aliqua
-            </p>
-        </div>
-    </section>
+    <main>
+        <section id="landing-page">
+            <div id="landing-page-text">
+                <p id="landing-top">Ipsum dolor sit amet,</p>
+                <h1>Nwabisa Mawu</h1>
+                <p id="introduction">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    <br>eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua
+                </p>
+            </div>
+        </section>
 
         <!-- About+Skills page -->
         <section id="About-Skills" class="box-shadow">
@@ -81,15 +79,18 @@
         <section id="Projects" class="box-shadow">
             <h2>Projects</h2>
             <ul id="project-list">
-                <li><a href="https://www.google.com/" target="_blank"><img class="project-img"
+                <li><figure><a href="https://www.google.com/" target="_blank"><img class="project-img"
                             src="/placeholder-images-digital_resume/pexels-christina-morillo-1181673.jpg"
-                            alt="Project1"></a></li>
-                <li><a href="https://www.google.com/" target="_blank"><img class="project-img"
+                            alt="Project1"></a><figcaption>Project 1</figcaption></figure></li>
+                <li><figure><a href="https://www.google.com/" target="_blank"><img class="project-img"
                             src="/placeholder-images-digital_resume/pexels-miguel-á-padriñán-343457.jpg"
-                            alt="Project2"></a></li>
-                <li><a href="https://www.google.com/" target="_blank"><img class="project-img"
-                            src="/placeholder-images-digital_resume/pexels-rfstudio-3825569.jpg"
-                            alt="Project3"></a></li>
+                            alt="Project2"></a>
+                            <figcaption>Project 2</figcaption></figure>
+                </li>
+                <li><figure><a href="https://www.google.com/" target="_blank"><img class="project-img"
+                            src="/placeholder-images-digital_resume/pexels-rfstudio-3825569.jpg" alt="Project3"></a>
+                <figcaption>Project 3</figcaption></figure>
+                        </li>
             </ul>
         </section>
 
@@ -107,23 +108,45 @@
                     Molestie ac feugiat sed lectus. Neque viverra justo nec ultrices dui sapien eget.</p>
             </div>
         </section>
+    </main>
 
-        <!-- Contact detail links and icons -->
-        <footer id="Contact-me" class="box-shadow">
+    <!-- Contact detail links and icons -->
+    <footer class="box-shadow">
+
+        <div id="Contact-me">
             <h2>Contact me</h2>
             <form action="https://formsubmit.co/nwabisa.mawu@gmail.com" method="POST">
-                <label for="Name">Name: <br><input name="Name" type="text" placeholder="Name Surname" required></label><br>
-                <label for="Role">Role:
-                    <br><label><input name="Rec-Ind" type="radio" required>Recruiter</label>
-                    <label><input name="Rec-Ind" type="radio" required>Independent client</label>
-                </label><br>
-                <label for="email">Return address: <br><input name="email" type="email" required></label><br>
-                <label for="subject">Subject: <br><input name="subject" type="text" required></label>
-                <p>Message</p>
-                <textarea cols="50" rows="11">Write email message here.</textarea><br>
-                <button id="submit">Submit</button>
+                <label for="Name">Name: <input name="Name" type="text" required></label><br>
+                <label for="email">e-mail: <input name="email" type="email" required></label>
+
+                <div id="message-block">
+                    <p>Message: </p>
+                    <textarea rows="4"></textarea><br>
+                </div>
+
+                <!-- created to set button the right -->
+                <div id="button-align">
+                    <button id="submit">Submit</button>
+                </div>
             </form>
-        </footer>
+        </div>
+
+        <div id="logo_socials">
+
+            <img id="card-logo" src="/images-digital_resume/real-logo.png" alt="Cardlogo">
+            <a href="#" class="social-links"><img src="/Icons/email-icon.png"
+                    alt="Email-icon">nwabisa.mawu@gmail.com</a>
+            <a class="social-links" href="https://www.linkedin.com/in/nwabisa-mawu-b21735198" target="_blank"><img
+                    src="/Icons/linkedin.png" alt="LinkedIn-icon">LinkedIn</a>
+            <a class="social-links" href="https://github.com/Nwabisa-Mawu" target="_blank"><img
+                    src="/Icons/github-icon2.png">My
+                Github</a>
+            <a class="social-links" href="/placeholder-images-digital_resume/ITW Marking Rubric.pdf"
+                target="_blank"><img src="/Icons/docs-icon.png" alt="resume-icon">My
+                Resume</a>
+        </div>
+
+    </footer>
 </body>
 
 </html>

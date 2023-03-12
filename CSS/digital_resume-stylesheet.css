@@ -183,11 +183,13 @@ h1 {
     background-color: #8B7D6B;
 }
 
-#About {margin: auto 4vw auto 3vw;
+#About {
+    margin: auto 4vw auto 3vw;
     max-width: 40vw;
 }
 
-#Skills {padding-left: 3vw;
+#Skills {
+    padding-left: 3vw;
     padding-bottom: 6vw;
     margin: auto auto auto 1vw;
     border-style: hidden hidden hidden double;
@@ -199,19 +201,26 @@ h1 {
 /* white background container */
 .container {
     width: 150%;
-background-color: #ffffff;}
+    background-color: #ffffff;
+}
 
-.html {width: 60%;
+.html {
+    width: 60%;
     color: #98D65E;
-background-color: #98D65E;}
+    background-color: #98D65E;
+}
 
-.css {width: 78%;
+.css {
+    width: 78%;
     color: #98D65E;
-background-color: #98D65E;}
+    background-color: #98D65E;
+}
 
-.figma {width: 80%;
+.figma {
+    width: 80%;
     color: #98D65E;
-background-color: #98D65E;}
+    background-color: #98D65E;
+}
 
 
 
@@ -233,6 +242,10 @@ background-color: #98D65E;}
     border-color: #998a77;
 }
 
+figcaption {text-align: center;
+font-family: PT Sans, sans serif;
+font-size: larger;}
+
 /* Projects list with image links */
 #project-list {
     list-style-type: none;
@@ -249,22 +262,143 @@ background-color: #98D65E;}
 #Education-positioning {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
     /* Aligns the top of the heading and paragraph */
     align-items: baseline;
 }
 
+/* Education paragraph margins and border */
 .education-paragraph {
-    border-style: groove;
-    border-color: #EE7600;
-    margin-left: 15px;
-    margin-right: 20px;
-    padding-left: 15px;
-    border-style: none none none groove;
+    max-width: 30vw;
+    padding-left: 1.5vw;
+    padding-bottom: 10vw;
+    margin-right: 2vw;
+    border-color: #ffffff;
+    border-style: none none none ridge;
 }
 
 
 /* ===========Contact details/footer=========== */
+
+/* flexbox for alignment of contact section and logo+social links */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/* standardized size for the message textbox according to its container */
+textarea {
+    width: 100%;
+    background-color: #8B7D6B;
+    color: #ffffff;
+    margin-left: 6%;
+    border: 3px solid #8B7D6B;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* align message block with submit button using flexbox*/
+#message-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#Contact-me {
+    width: 60%;
+    height: 177%;
+    border-radius: 56px 0px 0px 56px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(255, 218, 185, 0.5);
+}
+
+/* box shadow on borders of text blocks */
+input {
+    width: 100%;
+    color: #ffffff;
+    background-color: #8B7D6B;
+    border: 3px solid #8B7D6B;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* BUTTON LOOK */
+button {
+    background-color: #8B7D6B;
+    color: #ffffff;
+    border-color: #8B7D6B;
+    border-radius: 56px;
+    padding: 1% 1% 1% 1%;
+    width: 35%;
+    font-family: PTSans, sans serif;
+    font-size: 100%;
+}
+
+/* created to set button the right */
+#button-align {
+    text-align: center;
+}
+
+button:hover {
+    background-color: #98D65E;
+    border-color: #98D65E;
+}
+
+
+#logo_socials {
+    /* flexbox to align logo and icons */
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 177%;
+    padding-left: 10%;
+
+    border-style: hidden hidden hidden groove;
+    border-color: #ffffff;
+    border-width: 0.2vw;
+}
+
+/* placement for individual social icons and descriptive text  */
+.social-links {
+    padding: 2% 0% 2% 0%;
+
+    /* used CSSgrid to align text and icons because 
+    they won't need to be changed */
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+
+#card-logo {
+    width: 70%;
+    padding-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /***************************************************Tablet-landscape: 768px <= width < 1366px*************************** */
