@@ -161,7 +161,8 @@ h1 {
     margin-left: 7vw;
     margin-right: 50vw;
     padding-left: 1vw;
-    border-style: hidden hidden ridge hidden
+    border-style: hidden hidden ridge hidden;
+    border-width: 5px;
 }
 
 #introduction {
@@ -294,6 +295,7 @@ form {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    margin-top: -5%;
 }
 
 /* standardized size for the message textbox according to its container */
@@ -313,7 +315,7 @@ textarea {
     justify-content: space-between;
     align-items: baseline;
     padding-top: 1%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
 
 #Contact-me {
@@ -362,9 +364,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 40%;
-    height: 177%;
     padding-left: 10%;
-
+    height: 177%;
     border-style: hidden hidden hidden groove;
     border-color: #ffffff;
     border-width: 0.2vw;
@@ -372,7 +373,7 @@ button:hover {
 
 /* placement for individual social icons and descriptive text  */
 .social-links {
-    padding: 2% 0% 2% 0%;
+    padding: 1% 0% 1% 0%;
 
     /* used CSSgrid to align text and icons because 
     they won't need to be changed */
@@ -382,7 +383,7 @@ button:hover {
 
 
 #card-logo {
-    width: 70%;
+    width: 65%;
     padding-top: 5%;
 }
 
