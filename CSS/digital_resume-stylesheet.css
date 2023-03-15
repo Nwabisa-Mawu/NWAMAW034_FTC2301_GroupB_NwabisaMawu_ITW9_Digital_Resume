@@ -16,10 +16,10 @@ body {
     flex-direction: column;
     align-content: space-around;
 
-     /* step 1: add a linear gradient background */
-     background: linear-gradient(270deg, #998a77 0%, #E2AC6B 50%, #FFDAB9 100%);
- 
-     /*make screen bigger so the wave is observable in the web page window */
+    /* step 1: add a linear gradient background */
+    background: linear-gradient(270deg, #E2AC6B 0%, #998a77 50%, #FFDAB9 100%);
+
+    /*make screen bigger so the wave is observable in the web page window */
     background-size: 600% 600%;
     animation-name: colorWave;
     animation-duration: 10s;
@@ -27,20 +27,29 @@ body {
     position: relative;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
+
+/* snap scroll for page */
+
 }
- 
+
 /* keyframe for background color change */
 @keyframes colorWave {
-    
+
     /* start of animation */
-    0% {background-position: 0% 100%;
+    0% {
+        background-position: 0% 100%;
     }
+
     /* middle of animation */
-    50% {background-position: 50% 50%;}
-    
+    50% {
+        background-position: 40% 60%;
+    }
+
     /* end of animation */
-    100%{background-position: 100% 0%;}
-    
+    100% {
+        background-position: 100% 0%;
+    }
+
 }
 
 a {
@@ -78,12 +87,12 @@ h2 {
 /* LOGO AND NABVAR*/
 
 header {
-    
+
     /*used flex instead of grid
     beacuse I kept losing the logo out of view*/
-    
+
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
@@ -123,14 +132,15 @@ nav {
 
 /* button look for nav items */
 
-.nav-border { box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
+.nav-border {
+    box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 56px;
     border-style: outset;
     border-color: #998a77;
     background-color: #8B7D6B;
-text-align: center;
-font-weight: 80;
-width: 120%;
+    text-align: center;
+    font-weight: 80;
+    width: 120%;
 }
 
 
@@ -262,9 +272,11 @@ h1 {
     border-color: #998a77;
 }
 
-figcaption {text-align: center;
-font-family: PT Sans, sans serif;
-font-size: larger;}
+figcaption {
+    text-align: center;
+    font-family: PT Sans, sans serif;
+    font-size: larger;
+}
 
 /* Projects list with image links */
 #project-list {
@@ -401,20 +413,30 @@ button:hover {
 }
 
 /* CSS grid to align contact links below the logo */
-#link-order {display: grid;
-grid-template-columns: repeat(3,1fr);
-grid-template-rows: repeat(3, 1fr);
-row-gap: 15%;
-padding-left: 5%;
-padding-top: 5%;}
+#link-order {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 15%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
 
-.e-mail-telNo {grid-column: 1/span 2;
+.e-mail-telNo {
+    grid-column: 1/span 2;
 }
-.linked-in {grid-column: 1/2;
+
+.linked-in {
+    grid-column: 1/2;
 }
-.git-hub {grid-column: 2/3;
+
+.git-hub {
+    grid-column: 2/3;
 }
-.my-resume {grid-column: 3/4;}
+
+.my-resume {
+    grid-column: 3/4;
+}
 
 
 
@@ -480,4 +502,3 @@ padding-top: 5%;}
     }
 
 }
-
