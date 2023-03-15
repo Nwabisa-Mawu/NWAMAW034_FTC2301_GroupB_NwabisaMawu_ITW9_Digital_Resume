@@ -54,9 +54,14 @@ h2 {
 /* LOGO AND NABVAR*/
 
 header {
+    
+    /*used flex instead of grid
+    beacuse I kept losing the logo out of view*/
+    
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
     justify-content: space-between;
+    align-items: center;
     overflow: hidden;
     position: fixed;
     top: 2vh;
@@ -64,17 +69,7 @@ header {
     right: 2vw;
 
     /* background image for nav-bar */
-    background-image:
-        linear-gradient(to bottom, rgba(255, 237, 216, 0.336), rgba(0, 0, 0, 0.336)),
-        url('/images-digital_resume/Page-background.png');
-    mix-blend-mode: normal;
-    filter: drop-shadow(0px 4px 4px rgba(255, 255, 246, 0.705));
     width: 95vw;
-    box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 56px;
-    border-style: outset;
-    border-width: 5px;
-    border-color: #998a77;
 }
 
 /* logo */
@@ -88,9 +83,11 @@ header {
 
 /* navbar individual items alignment */
 nav {
+
+    /* Divided the columns into 5 not 4 to create 
+    space away from the left margin without having to use padding */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     grid-column-gap: 4vw;
     font-family: 'PT Sans';
     font-style: normal;
@@ -99,21 +96,19 @@ nav {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav-About {
-    grid-area: 1 / 1 / 2 / 2;
+
+/* button look for nav items */
+
+.nav-border { box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    border-style: outset;
+    border-color: #998a77;
+    background-color: #8B7D6B;
+text-align: center;
+font-weight: 80;
+width: 120%;
 }
 
-.nav-Projects {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.nav-Education {
-    grid-area: 1 / 3 / 2 / 4;
-}
-
-.nav-ContactMe {
-    grid-area: 1 / 4 / 2 / 5;
-}
 
 /* ===========LANDING-PAGE============= */
 
@@ -349,7 +344,7 @@ button {
 }
 
 /* created to set button the right */
-#button-align {
+.button-align {
     text-align: center;
 }
 
@@ -363,8 +358,8 @@ button:hover {
     /* flexbox to align logo and icons */
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 40%;
-    padding-left: 10%;
     height: 177%;
     border-style: hidden hidden hidden groove;
     border-color: #ffffff;
@@ -381,10 +376,27 @@ button:hover {
     grid-template-columns: 1fr 10fr;
 }
 
+/* CSS grid to align contact links below the logo */
+#link-order {display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(3, 1fr);
+row-gap: 15%;
+padding-left: 5%;
+padding-top: 5%;}
+
+.e-mail-telNo {grid-column: 1/span 2;
+}
+.linked-in {grid-column: 1/2;
+}
+.git-hub {grid-column: 2/3;
+}
+.my-resume {grid-column: 3/4;}
+
+
 
 #card-logo {
     width: 65%;
-    padding-top: 5%;
+    padding-top: 15%;
 }
 
 
