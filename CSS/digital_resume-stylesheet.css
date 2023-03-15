@@ -10,13 +10,37 @@
 
 body {
     font-family: PT Sans, sans-serif;
-    background-image: url('/images-digital_resume/Page-background.png');
-    background-size: cover;
     color: #ffffff;
     /*CSS gridbox to align all the cards in the page*/
     display: flex;
     flex-direction: column;
     align-content: space-around;
+
+     /* step 1: add a linear gradient background */
+     background: linear-gradient(270deg, #998a77 0%, #E2AC6B 50%, #FFDAB9 100%);
+ 
+     /*make screen bigger so the wave is observable in the web page window */
+    background-size: 600% 600%;
+    animation-name: colorWave;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+ 
+/* keyframe for background color change */
+@keyframes colorWave {
+    
+    /* start of animation */
+    0% {background-position: 0% 100%;
+    }
+    /* middle of animation */
+    50% {background-position: 50% 50%;}
+    
+    /* end of animation */
+    100%{background-position: 100% 0%;}
+    
 }
 
 a {
@@ -38,7 +62,7 @@ h2 {
     box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 56px;
     border-style: outset;
-    border-width: 5px;
+    border-width: 10px;
     border-color: #998a77;
     margin-top: 25vh;
     padding-bottom: 30vh;
@@ -128,7 +152,7 @@ width: 120%;
     box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 56px;
     border-style: outset;
-    border-width: 5px;
+    border-width: 10px;
     border-color: #998a77;
     margin-top: 25vh;
     padding-bottom: 30vh;
