@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Survey-FormCSS.css">
+    <title>Surevy Form for elections</title>
+</head>
+<body>
+    <header><h1 id="title"><strong>Voter interest survey form</strong></h1><p id="description">The aim of this survey is to determine how many eligible voters have registered to vote in the 2021 Municipal elections.</p></header>
+    <section id="real-form">
+    <form id="survey-form"><div>
+      <label id="name-label">Name</label><br><input id="name" type="text" placeholder="name" required></div>
+      <div><label id="surname-label">Surname</label><br><input id="surname-label" type="text" placeholder="surname" required></div>
+      <div><label id="email-label">Email</label><br><input id="email" type="email" placeholder="email" required></div>
+      <div><label id="number-label">Age</label><br><input id="number" type="number" min="18" max="99" placeholder="Age" required></div>
+      <div><p>Which option best describes your current employment status?</p>
+        <select id="dropdown" name="role" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Employed full-time</option>
+          <option value="part-time">Employed part-time</option>
+          <option value="prefernot">Prefer not to say</option>
+        </select></div>
+      <div><p>Have you registered to vote in the 2021 Municipal elections?</p>
+        <label for="Yes"><input type="radio" name="Yes-No-maybe" value="yes">Yes</label><br>
+        <label for="Not-yet"><input type="radio" name="Yes-No-maybe" value="maybe">Not yet, but I am planning to.</label><br>
+        <label for="No"><input type="radio" name="Yes-No-maybe" value="No">No and I'm not planning to.</label></div>
+      <div><p>If you are not registered, may you please select why below. (Check all that apply)</p>
+        <label id="Did-not-know"><input type="checkbox" name="why" value="did-not-know">Did not know registration was open/about the elections.</label><br>
+        <label id="Online"><input type="checkbox" name="why" value="online">Did not know about online registration.</label><br>
+        <label id="manual"><input type="checkbox" name="why"
+value="manual">Waiting for manual registration in your area.</label><br>
+        <label id="none"><input type="checkbox" name="why" value="none">Not interested in voting.</label><br><label id="non">Please give a short explanation as to why not.</label><br><input type="textbox">    
+      </div>
+      <div><p>Additional comments:</p>
+        <textarea>Additional comments</textarea><br>
+        <button id="submit">Submit</button>
+      </div>  
+    </form>
+      </section>
+</body>
+</html>

@@ -1,20 +1,32 @@
 /*IMPORTED FONTS*/
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins&display=swap');
-
-
 
 
 /************************laptop-1366px width and higher**********************/
 
 /* ===========ROOT STYLING-background, font, links etc=========== */
 
+html {
+    /* snap scroll for page */
+
+    scroll-snap-type: both mandatory;
+    /*this makes snap-scroll mandatory*/
+
+    scroll-padding-top: 15%; /*added this to make the pages snap to the
+    center and be spaced properly from nav-bar --NB*/
+}
+ /* class selector for all sections to activa */
+.scroll-snap-child {
+    height: 80vh;
+    width: 80vw;
+    scroll-snap-align: center;
+}
+
+
 body {
     font-family: PT Sans, sans-serif;
     color: #ffffff;
-    /*CSS gridbox to align all the cards in the page*/
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
 
     /* step 1: add a linear gradient background */
     background: linear-gradient(270deg, #E2AC6B 0%, #998a77 50%, #FFDAB9 100%);
@@ -28,11 +40,10 @@ body {
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
 
-/* snap scroll for page */
-
 }
 
-/* keyframe for background color change */
+
+/* step 2: keyframe for background color change */
 @keyframes colorWave {
 
     /* start of animation */
@@ -52,8 +63,12 @@ body {
 
 }
 
-a {
-    color: #ffffff;
+p {line-height: 2vw;
+font-weight: 300;
+font-size: 1.5vw;}
+
+
+a { color: #ffffff;
     text-decoration: none;
 }
 
@@ -98,20 +113,17 @@ header {
     overflow: hidden;
     position: fixed;
     top: 2vh;
-    left: 2;
     right: 2vw;
-
-    /* background image for nav-bar */
     width: 95vw;
 }
 
 /* logo */
 #logo {
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-bottom: 1%;
-    width: 8%;
-    height: 8%;
+    padding-top: 1vh;
+    padding-right: 6vw;
+    padding-bottom: 1vh;
+    width: 10%;
+    height: 10%;
 }
 
 /* navbar individual items alignment */
@@ -124,22 +136,21 @@ nav {
     grid-column-gap: 4vw;
     font-family: 'PT Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2vw;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
-/* button look for nav items */
+/* button look for nav items by adding a border */
 
 .nav-border {
     box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 56px;
     border-style: outset;
     border-color: #998a77;
-    background-color: #8B7D6B;
+    background-color: #8B7D6B 0; /*to make the button background transparent*/
     text-align: center;
-    font-weight: 80;
+    font-weight: 70;
     width: 120%;
 }
 
@@ -151,7 +162,7 @@ nav {
     /* Background-image for landing page */
 
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(255, 237, 216, 0.336)),
-        url('/images-digital_resume/hero-background.png');
+        url('/Images/hero-background.png');
     mix-blend-mode: normal;
     background-position: center center;
     background-repeat: no-repeat;
@@ -164,12 +175,11 @@ nav {
     border-style: outset;
     border-width: 10px;
     border-color: #998a77;
-    margin-top: 25vh;
-    padding-bottom: 30vh;
+    padding-bottom: 12%;
+    margin-top: 15%;
 
     /* larger box-card dimensions than th other pages */
-    margin-left: 4vw;
-    margin-right: 4vw;
+    margin-left: 7vw;
 }
 
 /* Landing-page-text */
@@ -177,25 +187,29 @@ nav {
 #landing-page-text {
     display: flex;
     flex-direction: column;
-    margin-top: 5vw;
+    justify-content: center;
+    padding-top: 4%;
 }
 
 #landing-top {
     margin-left: 15vw;
+    margin-bottom: 1vh;
 }
 
 /* Nwabisa mawu on title page */
 h1 {
-    font-size: 10vh;
+    font-size: 4vw;
+    font-weight: 200;
     margin-left: 7vw;
-    margin-right: 50vw;
-    padding-left: 1vw;
+    margin-right: 40vw;
     border-style: hidden hidden ridge hidden;
-    border-width: 5px;
+    border-width: 3px;
 }
 
 #introduction {
+    margin-top: -3%;
     margin-left: 7vw;
+    padding-right: 40vw;
 }
 
 
@@ -220,7 +234,8 @@ h1 {
 
 #Skills {
     padding-left: 3vw;
-    padding-bottom: 6vw;
+    padding-bottom: 3vw;
+    padding-top: 2vh;
     margin: auto auto auto 1vw;
     border-style: hidden hidden hidden double;
 }
@@ -230,40 +245,41 @@ h1 {
 /* Skillbar for Skills section */
 /* white background container */
 .container {
-    width: 150%;
-    background-color: #ffffff;
+    width: 25vw;
+    line-height: 2vw;
+    color: #60883b;
+    font-size: 80%;
+    padding-left: 4%;
+    margin-left: -5%;
+    background-color: #f7e1cc;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    border-style: outset;
+    border-width: 3px;
+    border-color: #998a77;
 }
-
-.html {
-    width: 60%;
-    color: #98D65E;
-    background-color: #98D65E;
-}
-
-.css {
-    width: 78%;
-    color: #98D65E;
-    background-color: #98D65E;
-}
-
-.figma {
-    width: 80%;
-    color: #98D65E;
-    background-color: #98D65E;
-}
-
-
 
 
 
 /* ===========Projects=========== */
 
+/* created own box-shadow so it can be transparent*/
+#Projects { box-shadow: outset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #998a77;
+    margin-top: 25vh;
+    padding-bottom: 30vh;
+    height: 38vh;
+    background-color: #8B7D6B 0;
+    margin-left: 7vw;
+    margin-right: 7vw;}
 
 /* Project image-links */
-
 .project-img {
     border-radius: 10%;
-    width: 20vw;
+    width: 16vw;
     height: 30vh;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 56px;
@@ -275,7 +291,7 @@ h1 {
 figcaption {
     text-align: center;
     font-family: PT Sans, sans serif;
-    font-size: larger;
+    font-size: 120%;
 }
 
 /* Projects list with image links */
@@ -283,8 +299,8 @@ figcaption {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 10vw auto auto auto;
+    justify-content: center;
+    margin-left: -4%;
 }
 
 
@@ -292,22 +308,18 @@ figcaption {
 
 /* EDUCATION flexbox paragraphs and subheadings */
 #Education-positioning {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
     /* Aligns the top of the heading and paragraph */
-    align-items: baseline;
+    margin-left: 10%;
 }
 
 /* Education paragraph margins and border */
 .education-paragraph {
     max-width: 30vw;
-    padding-left: 1.5vw;
-    padding-bottom: 10vw;
-    margin-right: 2vw;
+    padding-left: 3%;
     border-color: #ffffff;
-    border-style: none none none ridge;
+    border-style: none ridge none ridge;
 }
 
 
@@ -318,7 +330,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: larger;
+    font-size: 100%;
 }
 
 
@@ -410,39 +422,26 @@ button:hover {
     they won't need to be changed */
     display: grid;
     grid-template-columns: 1fr 10fr;
+    column-gap: 1%;
 }
 
 /* CSS grid to align contact links below the logo */
 #link-order {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 15%;
-    padding-left: 5%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 10%;
+    padding-left: 1%;
     padding-top: 5%;
 }
 
-.e-mail-telNo {
-    grid-column: 1/span 2;
-}
 
-.linked-in {
-    grid-column: 1/2;
-}
-
-.git-hub {
-    grid-column: 2/3;
-}
-
-.my-resume {
-    grid-column: 3/4;
-}
 
 
 
 #card-logo {
     width: 65%;
-    padding-top: 15%;
+    padding-top: 20%;
 }
 
 
@@ -460,12 +459,10 @@ button:hover {
 
 
 
-/***************************************************Tablet-landscape: 768px <= width < 1366px*************************** */
+/***************************************************Tablet-landscape: 1024px <= width < 1366px*************************** */
 
-@media screen and (max-width:768px) {
-    form {
-        text-align: center;
-    }
+@media screen and (min-width: 1024px) {
+
 
     /* Skills-list */
     ul {
@@ -473,32 +470,68 @@ button:hover {
         flex-direction: row;
         justify-content: space-around;
     }
+/* realigns the subheadings */
+    .education-paragraph { padding-left: 3vw;}
 
+    /*realigns the contact icons and logo
+    on last page  */
+    .link-order-1024 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 15%;
+        column-gap: 5%;
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .git-hub {grid-column: 3/2;}
+    .my-resume {grid-column: 1/2;}
 
+    /* adjust logo padding to fit */
+    #card-logo { padding-top: 2vw;
+    }
+    
 }
 
+/* size of social links on the last page */
 
+
+
+
+
+
+/***************************************************Tablet-portrait: 768px <= width < 1024px*************************** */
+
+@media screen and (min-width: 768px) {
+    
+
+    /* change the size of the name heading */
+    h1 {font-size: 4vw;}
+
+    
+    #logo_socials {display: flex;
+    flex-direction: column;
+justify-self: space-around;}
+}
 
 
 
 
 /***************************************************Mobile-portrait: 425px <= width < 768px*************************** */
 
-@media screen and (max-width:425px) {
-    #project-list {
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-    }
+@media  screen and (max-width: 425px) {
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
+    /* align landing page */
 
-    form {
-        text-align: center;
-    }
+.landingText-mobile {margin-top: 20vw;}
+
+#landing-page {margin-bottom: 40%;}
+    
+
+/* change font size inside the skill bars */
+.container-mobile {font-size: 50%;}
+
+/* lengthen the left border of skills */
+
 
 }

@@ -1,0 +1,29 @@
+body {
+    /* step 1: add a linear gradient background */
+    background: linear-gradient(270deg, #998a77 0%, #E2AC6B 100%);
+ 
+     /*make screen bigger so the wave is observable in the web page window */
+    background-size: 600% 600%;
+    animation-name: colorWave;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+
+/* make the animation keyframe */
+
+@keyframes colorWave {
+    
+    /* start of animation */
+    0% {background-position: 0% 100%;
+    }
+    /* middle of animation */
+    50% {background-position: 50% 50%;}
+    
+    /* end of animation */
+    100%{background-position: 100% 0%;}
+    
+}

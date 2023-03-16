@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+
+
+figure{text-align: center;}
+p{text-align: center;}
+h1{font-size: 35px;}
+h3{text-align: center;}
+li{line-height: 20px; padding-bottom: 10px;}
+figcaption{line-height: 20px; padding-top: 10px;}
+
+
+body{font-family: Kaisei Tokumin, serif; color: #FFFFFF; background-color: #333333;}
+
+#image{border: 5px; border-style: solid; border-color: #333333; max-width: 500px; display: block; max-width: 100%; height: auto; margin-left: auto; margin-right: auto;}
+
+
+#quote{text-align: center; font-family: Playfair display, serif; font-size: 50px; padding-top: 10px; line-height: 70px;}
+
+#title-name{text-align: center; color: #C7C7C7;}
+
+#main-thing{background-color: #555555;}
+
+#image-quote{display: grid; grid-template-columns: 2fr 2fr;}
+
+#Time-line{display: grid; grid-template-columns: 3fr 1fr;}
+
+#Books{padding-left: 20px; padding-top: 55px;}
+#tribute-info{padding-top: 40px;}
