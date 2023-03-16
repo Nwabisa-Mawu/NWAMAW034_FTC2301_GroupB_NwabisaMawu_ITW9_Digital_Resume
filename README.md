@@ -1,5 +1,5 @@
 
-# Nwabisa Mawu - ITW Digital Resume
+# Nwabisa Mawu - ITW9 Digital Resume
 
 This is my digital resume done for Introduction to Web development final capstone project.
 
