@@ -3,6 +3,8 @@
 
 This is my digital resume done for Introduction to Web development final capstone project.
 
+Figma link: https://www.figma.com/file/83VA4l3BfFkxRjs1MBcTte/FTC2301_GroupB_NwabisaMawu_ITW_ResumeWireframe?node-id=826-118&t=wFgmdK4vfyKPiu4C-0
+
 Technologies used:
 HTML
 CSS
