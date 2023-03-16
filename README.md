@@ -1,7 +1,11 @@
 
-# Digital Resume
+# Nwabisa Mawu - ITW Digital Resume
 
 This is my digital resume done for Introduction to Web development final capstone project.
+
+Technologies used:
+HTML
+CSS
 
 
 ## Acknowledgements
